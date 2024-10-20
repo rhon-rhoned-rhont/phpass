@@ -183,15 +183,15 @@ if (isset($_GET['remove_post'])) {
         <div class="create-blog">
             <h1>post-A-post</h1>
             <form action="" method="POST">
-                <input type="text" name="title" placeholder="Enter title" required>
-                <textarea name="content" placeholder="Fill it up with your random mumblings" rows="5" required></textarea>
+                <input type="text" name="title" placeholder="Context" required>
+                <textarea name="content" placeholder="Fill it up with random mumblings" rows="5" required></textarea>
                 <input type="submit" name="add_post" value="Submit">
             </form>
         </div>
     </div>
 
     <div class="right-side">
-        <h2>Past Mumblings</h2>
+        <h2>Former mumblings</h2>
         <ul class="blog-posts">
             <?php foreach ($_SESSION['blog_posts'] as $id => $post) : ?>
                 <li class="post" data-post-id="<?php echo $id; ?>">
